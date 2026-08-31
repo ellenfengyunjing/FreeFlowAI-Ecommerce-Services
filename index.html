@@ -37,7 +37,7 @@ section{position:relative}
 .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,18,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}
 .nav-inner{max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:28px}
 .logo{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:18px;color:#fff;letter-spacing:.3px}
-.logo-badge{width:34px;height:34px;border-radius:9px;object-fit:contain;display:block;flex-shrink:0}
+.logo-img{height:38px;width:auto;display:block;flex-shrink:0}
 .logo .tagline{font-size:11px;color:rgba(255,255,255,.5);font-weight:500;letter-spacing:.5px}
 .nav-links{display:flex;gap:26px;margin-left:auto}
 .nav-links a{color:rgba(255,255,255,.72);font-size:14.5px;font-weight:500;transition:color .2s}
@@ -168,6 +168,25 @@ section{position:relative}
 .fs-chip b{display:block;font-family:var(--font-display);font-size:19px;background:var(--grad-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .fs-chip span{font-size:12px;color:rgba(255,255,255,.6)}
 
+/* ---------- Stack Intro ---------- */
+.stack-intro{background:linear-gradient(135deg,rgba(217,70,239,.1),rgba(124,77,255,.06));border:1px solid rgba(217,70,239,.22);border-radius:18px;padding:28px 32px;margin-bottom:36px;color:#fff}
+.stack-intro .si-tag{display:inline-block;font-size:12px;background:var(--grad);padding:5px 12px;border-radius:8px;letter-spacing:.5px;margin-bottom:12px;font-weight:600}
+.stack-intro h3{color:#fff;font-size:19px;line-height:1.55;margin-bottom:10px;font-weight:700}
+.stack-intro h3 .grad-text{background:var(--grad-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stack-intro>p{color:rgba(255,255,255,.78);font-size:14px;line-height:1.75;margin-bottom:18px}
+.si-deliver{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.si-item{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px 16px}
+.si-item .si-ico{flex-shrink:0;width:32px;height:32px;border-radius:10px;background:var(--grad);display:grid;place-items:center;color:#fff;font-size:14px;font-weight:700}
+.si-item b{display:block;color:#fff;font-size:14px;margin-bottom:3px}
+.si-item small{color:rgba(255,255,255,.6);font-size:12.5px;line-height:1.5}
+
+/* ---------- Founder Tags/Orgs ---------- */
+.founder-tags{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 12px}
+.ft-tag{background:rgba(217,70,239,.12);border:1px solid rgba(217,70,239,.32);color:#fff;font-size:12.5px;padding:4px 11px;border-radius:8px;font-weight:500}
+.founder-orgs{margin-top:14px;padding-top:14px;border-top:1px dashed rgba(255,255,255,.14)}
+.founder-orgs-label{color:rgba(255,255,255,.55);font-size:13px;display:block;margin-bottom:8px}
+.org-chip{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.78);font-size:12.5px;padding:4px 11px;border-radius:7px;margin:0 6px 6px 0;display:inline-block}
+
 /* ---------- Pricing ---------- */
 .price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:stretch}
 .price{background:#fff;border:1px solid #eee8f5;border-radius:var(--radius);padding:26px 22px;display:flex;flex-direction:column;box-shadow:var(--shadow-sm);position:relative;transition:transform .25s,box-shadow .25s}
@@ -259,7 +278,7 @@ section{position:relative}
 <!-- ==================== NAV ==================== -->
 <nav class="nav">
   <div class="nav-inner">
-    <div class="logo"><img class="logo-badge" src="./logo.png" alt="FreeFlow AI Logo">FreeFlow<span style="background:var(--grad-text);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent"> AI</span><span class="tagline">WHERE AI SETS YOU FREE</span></div>
+    <div class="logo"><img class="logo-img" src="./logo-h.png" alt="FreeFlow AI"></div>
     <div class="nav-links">
       <a href="#pain">运营痛点</a>
       <a href="#value">核心价值</a>
@@ -285,7 +304,7 @@ section{position:relative}
     <p class="sub">团队在飞书提需求 → AI 自动读取执行 → 结果写回飞书。<b>Listing 日产 100+ 条</b>、<b>产品图日产 100+ 张</b>、<b>TK 爆款视频日产 50+ 条</b>、<b>选品报告 30 分钟出</b>——覆盖上架、素材、广告、选品、竞对全流程。</p>
     <div class="hero-ctas">
       <a href="https://ccnkpg6fj0oc.feishu.cn/share/base/form/shrcnrO1fb8XWn0bpJq0EF4UyCd" target="_blank" rel="noopener" class="btn btn-primary">填表预约 · 30 分钟免费诊断通话</a>
-      <a href="https://ecommerce-skill-hub.com/" target="_blank" rel="noopener" class="btn btn-ghost">¥299 体验 AI 自动化工具箱 →</a>
+      <a href="https://ecommerce-skill-hub.com/templates/ai" target="_blank" rel="noopener" class="btn btn-ghost">¥299 体验 AI 自动化工具箱 →</a>
     </div>
     <div class="hero-stats">
       <div class="hstat"><div class="num">100+ 条/天</div><div class="lbl">Listing 批量生成</div></div>
@@ -365,7 +384,7 @@ section{position:relative}
     <div class="compare-note">💡 <b>成本口径说明：</b>单张图 0.3 元为直出价；系统将每张图的抽卡次数控制在 3 次以内，因此一套 10 张组图成本区间为 ¥3（一次直出）~ ¥9（每张抽满 3 次），视频同理 ¥30-90/条。质量不合格的抽卡重出已包含在此区间内，成本完全可控。</div>
     <div class="compare-banner">
       <div class="big">35+ 家真实跨境公司跑通验证 · <span class="grad-text">80% 流程自动化</span><br><span class="mini">已覆盖上架、素材、广告、选品、竞对五大运营环节——人力不再是增长天花板。</span></div>
-      <a href="https://ccnkpg6fj0oc.feishu.cn/share/base/form/shrcnrO1fb8XWn0bpJq0EF4UyCd" target="_blank" rel="noopener" class="btn btn-primary">算算你能省多少 →</a>
+      <a href="#roi" class="btn btn-primary">算算你能省多少 →</a>
     </div>
   </div>
 </section>
@@ -516,12 +535,26 @@ section{position:relative}
     <div class="founder-info">
       <h3>冯韵静 Ellen Feng</h3>
       <div class="role">深圳市自在无界科技有限公司 CEO · 亿级跨境企业 AI 战略顾问</div>
-      <p>10 年海外市场营销与全球化增长经验，专注跨境电商 AI 自动化工具开发与陪跑交付，为跨境电商企业交付 AI 自动化解决方案。</p>
+      <div class="founder-tags">
+        <span class="ft-tag">AI Agent 架构师</span>
+        <span class="ft-tag">跨境 AI 实战专家</span>
+        <span class="ft-tag">资深企业 AI 培训导师</span>
+      </div>
+      <p>荷兰阿姆斯特丹大学硕士 · 10 年海外市场营销与全球化增长经验 · 全网万粉 AI 博主（@Ellen AI 实战派）。</p>
+      <p>累计 <b>35+</b> 场 AI 线下培训、<b>1500+</b> 名学员、<b>3000+</b> 人 AI 学习社群；为跨境电商、东南亚财税、海外房车、医疗、教育、品牌营销、出海企业服务、客服等 <b>30+</b> 企业提供 AI 自动化解决方案。</p>
       <div class="founder-stats">
-        <div class="fs-chip"><b>35+</b><span>AI 线下企业培训</span></div>
+        <div class="fs-chip"><b>35+</b><span>线下培训场次</span></div>
         <div class="fs-chip"><b>1500+</b><span>累计培训学员</span></div>
-        <div class="fs-chip"><b>35+</b><span>企业 AI 解决方案</span></div>
-        <div class="fs-chip"><b>10+</b><span>机构 AI 客座讲师</span></div>
+        <div class="fs-chip"><b>10+</b><span>合作机构</span></div>
+        <div class="fs-chip"><b>30+</b><span>服务企业</span></div>
+      </div>
+      <div class="founder-orgs">
+        <span class="founder-orgs-label">曾担任 AI 客座讲师的机构：</span>
+        <span class="org-chip">合肥跨境电商中心</span>
+        <span class="org-chip">亚马逊中国</span>
+        <span class="org-chip">深圳人工智能产业协会</span>
+        <span class="org-chip">香港大学 MBA</span>
+        <span class="org-chip">深圳院</span>
       </div>
     </div>
   </div>
@@ -535,6 +568,19 @@ section{position:relative}
       <h2>产品矩阵：从体验到全链路，<span class="grad-text">四步升单</span></h2>
       <p>从 ¥299 体验到 ¥28,880 全链路自动化，价格越高覆盖环节越多、省的越多。升单可抵扣已支付费用。</p>
     </div>
+
+    <div class="stack-intro">
+      <span class="si-tag">技术栈 · 交付体系</span>
+      <h3>以 <span class="grad-text">WorkBuddy / Codex</span> 为工作台 · <span class="grad-text">飞书</span> 为企业知识库与协作工具</h3>
+      <p>打造亚马逊运营多个环节的自动化体系。不同价格覆盖的业务场景和服务深度不同——从单场景工具箱到全链路自动化，价格越高覆盖越深、陪跑越重。</p>
+      <div class="si-deliver">
+        <div class="si-item"><span class="si-ico">①</span><div><b>WorkBuddy 企业版部署</b><small>本地 Agent 工作台 · 多任务调度中枢</small></div></div>
+        <div class="si-item"><span class="si-ico">②</span><div><b>团队培训</b><small>让团队真正会用、用得起来</small></div></div>
+        <div class="si-item"><span class="si-ico">③</span><div><b>定制自动化系统</b><small>架构设计 / 定制提示词 / API / MCP 等</small></div></div>
+        <div class="si-item"><span class="si-ico">④</span><div><b>1 个月陪跑落地服务</b><small>从交付到上跑通的端到端跟进</small></div></div>
+      </div>
+    </div>
+
     <div class="price-grid">
 
       <div class="price">
@@ -549,15 +595,15 @@ section{position:relative}
         </ul>
         <div class="li-title">交付内容</div>
         <ul>
-          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>批量生图 / 生视频飞书模板（直接复制使用）</li>
-          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>全部跨境自动化 Skills 及配套教程</li>
-          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>1 次免费 Skill 微调 + 社群答疑</li>
+<li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>批量生成产品组图 + 产品视频的飞书模板（直接复制使用）</li>
+<li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>详细教程（SOP 操作手册 + 实操教学视频）</li>
+<li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>社群答疑 + 1 次免费 Skill 微调</li>
         </ul>
         <div class="roi">
           <div class="r-line"><span>定位</span><b>体验档 · 即买即用</b></div>
           <div class="r-line"><span>回本</span><b>&lt;1 个月</b></div>
         </div>
-        <a href="https://ecommerce-skill-hub.com/" target="_blank" rel="noopener" class="btn btn-line">立即体验 →</a>
+        <a href="https://ecommerce-skill-hub.com/templates/ai" target="_blank" rel="noopener" class="btn btn-line">立即体验 →</a>
       </div>
 
       <div class="price">
@@ -633,7 +679,7 @@ section{position:relative}
 
     </div>
 
-    <div class="roi-total">
+    <div class="roi-total" id="roi">
       <div class="rt-title">投资回报测算：<span class="grad-text">以深圳运营岗月薪 ¥10,000 为基准</span></div>
       <div class="rt-item"><b>≈¥56.8</b><span>运营岗时薪</span></div>
       <div class="rt-item"><b>3+ 人</b><span>全链路节省运营人数</span></div>
@@ -684,7 +730,7 @@ section{position:relative}
     <div class="guarantee">🛡️ 30 天内跑通并产出第一份报告，未达成免费延长服务期</div>
     <div class="hero-ctas">
       <a href="https://ccnkpg6fj0oc.feishu.cn/share/base/form/shrcnrO1fb8XWn0bpJq0EF4UyCd" target="_blank" rel="noopener" class="btn btn-primary">填表预约 · 30 分钟免费诊断通话</a>
-      <a href="https://ecommerce-skill-hub.com/" target="_blank" rel="noopener" class="btn btn-ghost">¥299 体验 AI 自动化工具箱 →</a>
+      <a href="https://ecommerce-skill-hub.com/templates/ai" target="_blank" rel="noopener" class="btn btn-ghost">¥299 体验 AI 自动化工具箱 →</a>
     </div>
     <p style="margin-top:26px;font-size:14px;color:rgba(255,255,255,.55)">冯韵静 Ellen Feng · 深圳市自在无界科技有限公司 · freeflow-ai.com</p>
   </div>
